@@ -1,0 +1,15 @@
+{
+    "name": "joeferguson/basicfakerexample",
+    "description": "Basic faker library example for MemphisPHP.org",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joe Ferguson",
+            "email": "joe@joeferguson.me"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "fzaninotto/faker": "1.4.x-dev"
+    }
+}
