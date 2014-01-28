@@ -1,1 +1,28 @@
 {% extends "layouts.default.top_navbar" %}
+
+{% block body_content %}
+    <br />
+    <br />
+    <div class="container">
+        {% for user in users %}
+        <div class="row">
+            <h2>{{  user.userName }}</h2>
+            <p>
+                {{ user.email }}
+            </p>
+            <p>
+                {{ user.address }}
+            </p>
+            <p>
+                {{ user.creditCardType }} {{ user.creditCardNumber }} {{ user.creditCardExpirationDateString }}
+            </p>
+            <p>
+                {{ user.ip }}
+            </p>
+            <p>
+                {{ user.bio }}
+            </p>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function() {
-	return View::make('index');
+
+    $users = User::all();
+
+	return View::make('index')->with('users', $users);
 });
